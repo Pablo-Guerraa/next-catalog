@@ -1,7 +1,15 @@
+"use client";
+
+import type { MouseEvent } from "react";
 import { buildWhatsAppAdvisorLink } from "@/lib/whatsapp";
 
 export const Hero = () => {
   const whatsappAdvisorLink = buildWhatsAppAdvisorLink();
+  const handleScrollToCatalog = (event: MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    document.getElementById("catalog-start")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="bg-[var(--brand-bg)]">
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
@@ -16,7 +24,11 @@ export const Hero = () => {
             Detalles hechos con amor para cada momento especial.
           </p>
           <div className="flex flex-wrap items-center gap-4">
-            <button className="rounded-full bg-[var(--brand-primary)] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90">
+            <button
+              type="button"
+              onClick={handleScrollToCatalog}
+              className="rounded-full bg-[var(--brand-primary)] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+            >
               Explorar catálogo
             </button>
             <a

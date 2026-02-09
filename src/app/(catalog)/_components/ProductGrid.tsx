@@ -1,9 +1,13 @@
 import mockProducts from "@/data/mock-products.json";
 import { ProductCard } from "./ProductCard";
 
-export const ProductGrid = () => {
+type ProductGridProps = {
+  id?: string;
+};
+
+export const ProductGrid = ({ id }: ProductGridProps) => {
   return (
-    <section className="mx-auto w-full max-w-6xl px-6 pb-16">
+    <section id={id} className="mx-auto w-full max-w-6xl px-6 pb-16">
       <div className="flex flex-wrap items-end justify-between gap-4 pb-6">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--brand-secondary)]">
