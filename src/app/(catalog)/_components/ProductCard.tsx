@@ -1,8 +1,15 @@
 import { formatPrice } from "@/lib/format";
-import type { Product } from "@/data/mock-products";
 
 type ProductCardProps = {
-  product: Product;
+  product: {
+    id: string;
+    name: string;
+    price: number;
+    currency: string;
+    category: string;
+    description: string;
+    imageUrl: string;
+  };
 };
 
 export const ProductCard = ({ product }: ProductCardProps) => {

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "p-001",
+    "name": "Silla Aura",
+    "price": 129,
+    "currency": "USD",
+    "category": "Hogar",
+    "description": "Diseño ergonómico con tapizado suave y estructura liviana.",
+    "imageUrl": "https://picsum.photos/seed/aura-chair/600/400"
+  },
+  {
+    "id": "p-002",
+    "name": "Lámpara Nébula",
+    "price": 89,
+    "currency": "USD",
+    "category": "Iluminación",
+    "description": "Luz cálida regulable para ambientes acogedores.",
+    "imageUrl": "https://picsum.photos/seed/nebula-lamp/600/400"
+  },
+  {
+    "id": "p-003",
+    "name": "Mesa Bruma",
+    "price": 259,
+    "currency": "USD",
+    "category": "Muebles",
+    "description": "Superficie amplia con acabado mate y detalles de madera.",
+    "imageUrl": "https://picsum.photos/seed/bruma-table/600/400"
+  },
+  {
+    "id": "p-004",
+    "name": "Set Terra",
+    "price": 74,
+    "currency": "USD",
+    "category": "Decoración",
+    "description": "Texturas orgánicas para un estilo natural y minimalista.",
+    "imageUrl": "https://picsum.photos/seed/terra-decor/600/400"
+  },
+  {
+    "id": "p-005",
+    "name": "Cojines Lumen",
+    "price": 48,
+    "currency": "USD",
+    "category": "Textiles",
+    "description": "Pack de cojines con telas suaves y tonos neutros.",
+    "imageUrl": "https://picsum.photos/seed/lumen-pillows/600/400"
+  },
+  {
+    "id": "p-006",
+    "name": "Estantería Halo",
+    "price": 199,
+    "currency": "USD",
+    "category": "Organización",
+    "description": "Módulos abiertos para exhibir libros y piezas clave.",
+    "imageUrl": "https://picsum.photos/seed/halo-shelf/600/400"
+  },
+  {
+    "id": "p-007",
+    "name": "Alfombra Nido",
+    "price": 139,
+    "currency": "USD",
+    "category": "Textiles",
+    "description": "Trama artesanal con relieve y alta durabilidad.",
+    "imageUrl": "https://picsum.photos/seed/nido-rug/600/400"
+  },
+  {
+    "id": "p-008",
+    "name": "Jarrón Alba",
+    "price": 36,
+    "currency": "USD",
+    "category": "Decoración",
+    "description": "Pieza cerámica con acabado satinado y forma escultural.",
+    "imageUrl": "https://picsum.photos/seed/alba-vase/600/400"
+  },
+  {
+    "id": "p-009",
+    "name": "Sofá Canto",
+    "price": 499,
+    "currency": "USD",
+    "category": "Sala",
+    "description": "Sillón modular con respaldo alto y confort premium.",
+    "imageUrl": "https://picsum.photos/seed/canto-sofa/600/400"
+  },
+  {
+    "id": "p-010",
+    "name": "Mesa Lateral Filo",
+    "price": 95,
+    "currency": "USD",
+    "category": "Muebles",
+    "description": "Perfil delgado con base estable y acabado metálico.",
+    "imageUrl": "https://picsum.photos/seed/filo-side-table/600/400"
+  },
+  {
+    "id": "p-011",
+    "name": "Porta plantas Origen",
+    "price": 42,
+    "currency": "USD",
+    "category": "Decoración",
+    "description": "Soporte minimalista para resaltar tus plantas favoritas.",
+    "imageUrl": "https://picsum.photos/seed/origen-planter/600/400"
+  },
+  {
+    "id": "p-012",
+    "name": "Taza Cobalto",
+    "price": 24,
+    "currency": "USD",
+    "category": "Cocina",
+    "description": "Cerámica esmaltada con textura suave y color profundo.",
+    "imageUrl": "https://picsum.photos/seed/cobalto-mug/600/400"
+  }
+]

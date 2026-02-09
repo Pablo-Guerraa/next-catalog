@@ -1,4 +1,4 @@
-import { mockProducts } from "@/data/mock-products";
+import mockProducts from "@/data/mock-products.json";
 import { ProductCard } from "./ProductCard";
 
 export const ProductGrid = () => {

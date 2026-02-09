@@ -1,8 +1,5 @@
 const navLinks = [
-  { label: "Novedades", href: "#" },
-  { label: "Colecciones", href: "#" },
-  { label: "Espacios", href: "#" },
-  { label: "Sobre nosotros", href: "#" },
+  { label: "Contacto", href: "#" },
 ];
 
 export const SiteHeader = () => {
@@ -33,9 +30,6 @@ export const SiteHeader = () => {
             </a>
           ))}
         </nav>
-        <button className="hidden rounded-full border border-[var(--brand-border)] px-4 py-2 text-sm font-medium text-[var(--brand-fg)] transition hover:border-[var(--brand-primary)] hover:text-[var(--brand-primary)] md:inline-flex">
-          Iniciar sesión
-        </button>
       </div>
     </header>
   );
