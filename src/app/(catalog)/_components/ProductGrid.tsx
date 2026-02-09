@@ -13,12 +13,12 @@ export const ProductGrid = () => {
             Selección curada para cada espacio
           </h2>
         </div>
-        <div className="flex w-full max-w-sm items-center gap-2 rounded-full border border-[var(--brand-border)] bg-[var(--brand-card)] px-4 py-2 text-sm text-[var(--brand-muted)]">
+        <div className="flex w-full max-w-sm items-center gap-2 rounded-full border border-[var(--brand-border)] bg-white/70 px-4 py-2 text-sm text-[var(--brand-muted)] shadow-[var(--brand-shadow)]">
           <span className="text-base">🔍</span>
           <input
             type="text"
             placeholder="Buscar piezas, estilos o materiales"
-            className="w-full bg-transparent text-sm text-[var(--brand-fg)] outline-none placeholder:text-[var(--brand-muted)]"
+            className="w-full bg-transparent text-sm text-[var(--brand-fg)] outline-none placeholder:text-[var(--brand-muted)] focus-visible:ring-4 focus-visible:ring-[var(--brand-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
           />
         </div>
       </div>
