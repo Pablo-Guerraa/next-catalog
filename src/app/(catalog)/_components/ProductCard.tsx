@@ -19,7 +19,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
   const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
 
   return (
-    <article className="flex h-full flex-col overflow-hidden rounded-3xl border border-[var(--brand-border)] bg-[var(--brand-card)] shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+    <article className="flex h-full flex-col overflow-hidden rounded-3xl border border-[var(--brand-border)] bg-[var(--brand-card)] shadow-[var(--brand-shadow)] transition hover:-translate-y-1 hover:shadow-[0_14px_36px_rgba(47,42,40,0.12)]">
       <div className="h-48 overflow-hidden bg-[var(--brand-bg)]">
         <img
           src={product.imageUrl}
@@ -39,7 +39,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
               {product.name}
             </h3>
           </div>
-          <span className="text-sm font-semibold text-[var(--brand-primary)]">
+          <span className="text-sm font-semibold text-[var(--brand-secondary)]">
             {formatPrice(product.price, product.currency)}
           </span>
         </div>
@@ -52,7 +52,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-auto inline-flex w-full items-center justify-center rounded-full border border-[var(--brand-border)] px-4 py-2 text-sm font-medium text-[var(--brand-fg)] transition hover:border-[var(--brand-primary)] hover:text-[var(--brand-primary)]"
+          className="mt-auto inline-flex w-full items-center justify-center rounded-full border border-[var(--brand-border)] px-4 py-2 text-sm font-medium text-[var(--brand-fg)] transition hover:border-[var(--brand-primary)] hover:bg-[var(--brand-primary-soft)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--brand-ring)]"
         >
           Pedir por WhatsApp
         </a>

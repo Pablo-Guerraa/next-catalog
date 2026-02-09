@@ -16,16 +16,15 @@ export const Hero = () => {
             Detalles hechos con amor para cada momento especial.
           </p>
           <div className="flex flex-wrap items-center gap-4">
-            <button className="rounded-full bg-[var(--brand-primary)] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90">
+            <button className="rounded-full bg-[var(--brand-primary)] px-6 py-3 text-sm font-semibold text-[var(--brand-fg)] shadow-[var(--brand-shadow)] transition hover:bg-[var(--brand-primary-soft)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--brand-ring)]">
               Explorar catálogo
             </button>
             <a
               href={whatsappAdvisorLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-[var(--brand-border)] px-6 py-3 text-sm font-semibold text-[var(--brand-fg)] transition hover:border-[var(--brand-primary)] hover:text-[var(--brand-primary)]"
+              className="rounded-full border border-[var(--brand-border)] bg-transparent px-6 py-3 text-sm font-semibold text-[var(--brand-fg)] transition hover:border-[var(--brand-primary)] hover:bg-[var(--brand-primary)] hover:text-[var(--brand-fg)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--brand-ring)]"
             >
-
               Asesoría por WhatsApp
               <p className="text-xs text-[var(--brand-muted)]">
                 Atención personalizada y respuesta rápida
@@ -33,8 +32,8 @@ export const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="rounded-3xl border border-[var(--brand-border)] bg-[var(--brand-card)] p-6 shadow-sm">
-          <div className="space-y-4 rounded-2xl bg-gradient-to-br from-[rgba(59,91,219,0.1)] to-transparent p-6">
+        <div className="rounded-3xl border border-[var(--brand-border)] bg-[var(--brand-card)] p-6 shadow-[var(--brand-shadow)]">
+          <div className="space-y-4 rounded-2xl bg-gradient-to-br from-[rgba(232,174,183,0.18)] to-transparent p-6">
             <p className="text-sm text-[var(--brand-muted)]">Antes de hacer tu pedido</p>
             <h2 className="text-2xl font-semibold text-[var(--brand-fg)]">
               Todo lo que necesitas saber.
@@ -43,21 +42,21 @@ export const Hero = () => {
               Cada arreglo se elabora con flores frescas seleccionadas cuidadosamente el mismo día, pensando en transmitir emociones reales y duraderas.
             </p>
             <div className="grid grid-cols-2 gap-3 text-xs text-[var(--brand-muted)]">
-              <div className="rounded-2xl border border-[var(--brand-border)] bg-white/70 p-3">
+              <div className="rounded-2xl border border-[var(--brand-border)] bg-white/70 p-3 shadow-[var(--brand-shadow)]">
                 <p className="font-semibold text-[var(--brand-fg)]">Envíos a domicilio</p>
                 <p>Entregamos en Medellín y alrededores con cuidado y puntualidad.</p>
               </div>
-              <div className="rounded-2xl border border-[var(--brand-border)] bg-white/70 p-3">
+              <div className="rounded-2xl border border-[var(--brand-border)] bg-white/70 p-3 shadow-[var(--brand-shadow)]">
                 <p className="font-semibold text-[var(--brand-fg)]">1 día</p>
                 <p>Entrega estimada</p>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-3 text-xs text-[var(--brand-muted)]">
-              <div className="rounded-2xl border border-[var(--brand-border)] bg-white/70 p-3">
+              <div className="rounded-2xl border border-[var(--brand-border)] bg-white/70 p-3 shadow-[var(--brand-shadow)]">
                 <p className="font-semibold text-[var(--brand-fg)]">Reserva tu pedido</p>
                 <p>Solicitamos el 50% al confirmar y el restante al momento de la entrega.</p>
               </div>
-              <div className="rounded-2xl border border-[var(--brand-border)] bg-white/70 p-3">
+              <div className="rounded-2xl border border-[var(--brand-border)] bg-white/70 p-3 shadow-[var(--brand-shadow)]">
                 <p className="font-semibold text-[var(--brand-fg)]">Arreglos personalizados</p>
                 <p>Cuéntanos tu idea o referencia y la adaptamos a tu ocasión especial.</p>
               </div>
@@ -67,9 +66,7 @@ export const Hero = () => {
                 💐 Cada flor cuenta una historia. Nosotros te ayudamos a contar la tuya.
               </p>
             </div>
-
           </div>
-
         </div>
       </div>
     </section>

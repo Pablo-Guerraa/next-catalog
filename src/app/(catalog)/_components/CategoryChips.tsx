@@ -14,7 +14,7 @@ export const CategoryChips = () => {
         {categories.map((category) => (
           <span
             key={category}
-            className="rounded-full border border-[var(--brand-border)] bg-[var(--brand-card)] px-4 py-1 text-sm text-[var(--brand-muted)]"
+            className="rounded-full border border-[var(--brand-border)] bg-[var(--brand-card)] px-4 py-1 text-sm text-[var(--brand-muted)] transition first:border-[var(--brand-primary)] first:bg-[var(--brand-primary-soft)] first:text-[var(--brand-fg)] hover:border-[var(--brand-primary)] hover:text-[var(--brand-fg)]"
           >
             {category}
           </span>
