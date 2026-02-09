@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const navLinks = [
   { label: "Contacto", href: "#" },
 ];
@@ -7,9 +9,16 @@ export const SiteHeader = () => {
     <header className="border-b border-[var(--brand-border)] bg-[var(--brand-card)]">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-5">
         <div className="flex items-center gap-3">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--brand-primary)] text-sm font-semibold text-white">
-            NC
-          </span>
+          <div className="relative h-10 w-10 overflow-hidden rounded-full border border-[var(--brand-border)] bg-white">
+            <Image
+              src="/Icon.png"
+              alt="Jardín del Edén - Floristería"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+
           <div>
             <p className="text-base font-semibold text-[var(--brand-fg)]">
               Jardín del Edén

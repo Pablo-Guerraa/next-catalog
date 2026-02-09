@@ -6,7 +6,7 @@
     "currency": "COP",
     "category": "Cumpleaños",
     "description": "Un bouquet elegante con flores frescas y detalles personalizados.",
-    "imageUrl": "https://picsum.photos/seed/aura-chair/600/400"
+    "imageUrl": "/product-images/Bouquet-copa.jpeg"
   },
   {
     "id": "p-002",
@@ -15,7 +15,7 @@
     "currency": "COP",
     "category": "Aniversarios",
     "description": "Un bouquet elegante con flores frescas y detalles personalizados. Ideal para celebrar momentos especiales con estilo y sofisticación.",
-    "imageUrl": "https://picsum.photos/seed/nebula-lamp/600/400"
+    "imageUrl": "/product-images/Bouquet-copa.jpeg"
   },
   {
     "id": "p-003",
@@ -24,7 +24,7 @@
     "currency": "COP",
     "category": "Condolencias",
     "description": "Un bouquet elegante con flores frescas y detalles personalizados. Perfecto para expresar tus sentimientos en momentos de despedida y apoyo.",
-    "imageUrl": "https://picsum.photos/seed/bruma-table/600/400"
+    "imageUrl": "/product-images/Bouquet-copa.jpeg"
   },
   {
     "id": "p-004",
@@ -33,7 +33,7 @@
     "currency": "COP",
     "category": "Agradecimientos",
     "description": "Texturas orgánicas para un estilo natural y minimalista.",
-    "imageUrl": "https://picsum.photos/seed/terra-decor/600/400"
+    "imageUrl": "/product-images/Bouquet-abierto.jpeg"
   },
   {
     "id": "p-005",
@@ -42,7 +42,7 @@
     "currency": "COP",
     "category": "Nacimientos",
     "description": "Pack de cojines con telas suaves y tonos neutros.",
-    "imageUrl": "https://picsum.photos/seed/lumen-pillows/600/400"
+    "imageUrl": "/product-images/Bouquet-abierto.jpeg"
   },
   {
     "id": "p-006",
@@ -51,6 +51,78 @@
     "currency": "COP",
     "category": "Eventos",
     "description": "Módulos abiertos para exhibir libros y piezas clave.",
-    "imageUrl": "https://picsum.photos/seed/halo-shelf/600/400"
+    "imageUrl": "/product-images/Bouquet-abierto.jpeg"
+  },
+  {
+    "id": "p-007",
+    "name": "Tradicional pequeño",
+    "price": 30000,
+    "currency": "COP",
+    "category": "Eventos",
+    "description": "Módulos abiertos para exhibir libros y piezas clave.",
+    "imageUrl": "/product-images/Tradicional-pequeno.jpeg"
+  },
+  {
+    "id": "p-008",
+    "name": "Tradicional mediano",
+    "price": 40000,
+    "currency": "COP",
+    "category": "Eventos",
+    "description": "Módulos abiertos para exhibir libros y piezas clave.",
+    "imageUrl": "/product-images/Tradicional-pequeno.jpeg"
+  },
+  {
+    "id": "p-009",
+    "name": "Caja con chocolates pequeño",
+    "price": 70000,
+    "currency": "COP",
+    "category": "Eventos",
+    "description": "Módulos abiertos para exhibir libros y piezas clave.",
+    "imageUrl": "/product-images/caja-con-chocolates.jpeg"
+  },
+  {
+    "id": "p-010",
+    "name": "Caja con chocolates mediano",
+    "price": 90000,
+    "currency": "COP",
+    "category": "Eventos",
+    "description": "Módulos abiertos para exhibir libros y piezas clave.",
+    "imageUrl": "/product-images/caja-con-chocolates.jpeg"
+  },
+  {
+    "id": "p-011",
+    "name": "Caja con chocolates grande",
+    "price": 125000,
+    "currency": "COP",
+    "category": "Eventos",
+    "description": "Módulos abiertos para exhibir libros y piezas clave.",
+    "imageUrl": "/product-images/caja-con-chocolates.jpeg"
+  },
+  {
+    "id": "p-012",
+    "name": "Jarrones",
+    "price": 60000,
+    "currency": "COP",
+    "category": "Eventos",
+    "description": "Módulos abiertos para exhibir libros y piezas clave.",
+    "imageUrl": "/product-images/Jarrones.jpeg"
+  },
+  {
+    "id": "p-013",
+    "name": "Bouquets pequeños",
+    "price": 20000,
+    "currency": "COP",
+    "category": "Eventos",
+    "description": "Módulos abiertos para exhibir libros y piezas clave.",
+    "imageUrl": "/product-images/Bouquets-pequenos.jpeg"
+  },
+  {
+    "id": "p-014",
+    "name": "Bouquets medianos",
+    "price": 30000,
+    "currency": "COP",
+    "category": "Eventos",
+    "description": "Módulos abiertos para exhibir libros y piezas clave.",
+    "imageUrl": "/product-images/Bouquets-pequenos.jpeg"
   }
 ]
