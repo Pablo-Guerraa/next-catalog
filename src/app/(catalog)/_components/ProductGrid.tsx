@@ -10,14 +10,14 @@ export const ProductGrid = () => {
             Catálogo
           </p>
           <h2 className="text-3xl font-semibold text-[var(--brand-fg)]">
-            Selección curada para cada espacio
+            Arreglos pensados para cada ocasión
           </h2>
         </div>
         <div className="flex w-full max-w-sm items-center gap-2 rounded-full border border-[var(--brand-border)] bg-[var(--brand-card)] px-4 py-2 text-sm text-[var(--brand-muted)]">
           <span className="text-base">🔍</span>
           <input
             type="text"
-            placeholder="Buscar piezas, estilos o materiales"
+            placeholder="Buscar flores para un momento especial"
             className="w-full bg-transparent text-sm text-[var(--brand-fg)] outline-none placeholder:text-[var(--brand-muted)]"
           />
         </div>

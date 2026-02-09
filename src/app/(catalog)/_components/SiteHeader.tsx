@@ -12,10 +12,10 @@ export const SiteHeader = () => {
           </span>
           <div>
             <p className="text-base font-semibold text-[var(--brand-fg)]">
-              Next Catalog
+              Jardín del Edén
             </p>
             <p className="text-xs text-[var(--brand-muted)]">
-              Estudio de diseño interior
+              Floristería
             </p>
           </div>
         </div>
