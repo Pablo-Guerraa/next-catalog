@@ -1,12 +1,8 @@
-const categories = [
-  "Hogar",
-  "Muebles",
-  "Iluminación",
-  "Decoración",
-  "Textiles",
-  "Organización",
-  "Cocina",
-];
+import mockProducts from "@/data/mock-products.json";
+
+const categories = Array.from(
+  new Set(mockProducts.map((product) => product.category))
+);
 
 export const CategoryChips = () => {
   return (
