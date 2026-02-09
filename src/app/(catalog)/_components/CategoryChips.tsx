@@ -15,10 +15,14 @@ export const CategoryChips = () => {
         <span className="text-sm font-semibold text-[var(--brand-fg)]">
           Categorías destacadas
         </span>
-        {categories.map((category) => (
+        {categories.map((category, index) => (
           <span
             key={category}
-            className="rounded-full border border-[var(--brand-border)] bg-[var(--brand-card)] px-4 py-1 text-sm text-[var(--brand-muted)]"
+            className={`rounded-full border px-4 py-1 text-sm transition ${
+              index === 0
+                ? "border-[var(--brand-primary-soft)] bg-[var(--brand-primary-soft)] text-[var(--brand-fg)]"
+                : "border-[var(--brand-border)] bg-[var(--brand-card)] text-[var(--brand-muted)] hover:border-[var(--brand-primary-soft)] hover:text-[var(--brand-fg)]"
+            }`}
           >
             {category}
           </span>
