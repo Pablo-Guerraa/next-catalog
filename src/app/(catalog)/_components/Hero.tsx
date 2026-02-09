@@ -1,13 +1,14 @@
 "use client";
 
 import type { MouseEvent } from "react";
+import { smoothScrollToId } from "@/lib/scroll";
 import { buildWhatsAppAdvisorLink } from "@/lib/whatsapp";
 
 export const Hero = () => {
   const whatsappAdvisorLink = buildWhatsAppAdvisorLink();
   const handleScrollToCatalog = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
-    document.getElementById("catalog-start")?.scrollIntoView({ behavior: "smooth" });
+    smoothScrollToId("catalog-start", { duration: 750, offset: 0 });
   };
 
   return (
