@@ -1,4 +1,5 @@
 import { formatPrice } from "@/lib/format";
+import { buildWhatsAppMessage } from "@/lib/whatsapp";
 
 type ProductCardProps = {
   product: {
@@ -11,8 +12,12 @@ type ProductCardProps = {
     imageUrl: string;
   };
 };
+const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER!;
 
 export const ProductCard = ({ product }: ProductCardProps) => {
+  const message = buildWhatsAppMessage(product);
+  const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-3xl border border-[var(--brand-border)] bg-[var(--brand-card)] shadow-sm transition hover:-translate-y-1 hover:shadow-md">
       <div className="h-48 overflow-hidden bg-[var(--brand-bg)]">
@@ -23,6 +28,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
           loading="lazy"
         />
       </div>
+
       <div className="flex flex-1 flex-col gap-3 p-5">
         <div className="flex items-start justify-between gap-2">
           <div>
@@ -37,12 +43,19 @@ export const ProductCard = ({ product }: ProductCardProps) => {
             {formatPrice(product.price, product.currency)}
           </span>
         </div>
+
         <p className="text-sm leading-relaxed text-[var(--brand-muted)]">
           {product.description}
         </p>
-        <button className="mt-auto inline-flex w-full items-center justify-center rounded-full border border-[var(--brand-border)] px-4 py-2 text-sm font-medium text-[var(--brand-fg)] transition hover:border-[var(--brand-primary)] hover:text-[var(--brand-primary)]">
-          Ver detalle
-        </button>
+
+        <a
+          href={whatsappLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-auto inline-flex w-full items-center justify-center rounded-full border border-[var(--brand-border)] px-4 py-2 text-sm font-medium text-[var(--brand-fg)] transition hover:border-[var(--brand-primary)] hover:text-[var(--brand-primary)]"
+        >
+          Pedir por WhatsApp
+        </a>
       </div>
     </article>
   );

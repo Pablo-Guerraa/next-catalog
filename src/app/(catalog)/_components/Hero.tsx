@@ -1,4 +1,7 @@
+import { buildWhatsAppAdvisorLink } from "@/lib/whatsapp";
+
 export const Hero = () => {
+  const whatsappAdvisorLink = buildWhatsAppAdvisorLink();
   return (
     <section className="bg-[var(--brand-bg)]">
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
@@ -16,9 +19,18 @@ export const Hero = () => {
             <button className="rounded-full bg-[var(--brand-primary)] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90">
               Explorar catálogo
             </button>
-            <button className="rounded-full border border-[var(--brand-border)] px-6 py-3 text-sm font-semibold text-[var(--brand-fg)] transition hover:border-[var(--brand-primary)] hover:text-[var(--brand-primary)]">
-              Hablar con un asesor
-            </button>
+            <a
+              href={whatsappAdvisorLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-[var(--brand-border)] px-6 py-3 text-sm font-semibold text-[var(--brand-fg)] transition hover:border-[var(--brand-primary)] hover:text-[var(--brand-primary)]"
+            >
+
+              Asesoría por WhatsApp
+              <p className="text-xs text-[var(--brand-muted)]">
+                Atención personalizada y respuesta rápida
+              </p>
+            </a>
           </div>
         </div>
         <div className="rounded-3xl border border-[var(--brand-border)] bg-[var(--brand-card)] p-6 shadow-sm">
@@ -51,10 +63,10 @@ export const Hero = () => {
               </div>
             </div>
             <div className="mt-2 rounded-xl border border-[var(--brand-border)] bg-white/60 px-4 py-3">
-  <p className="text-center text-sm italic text-[var(--brand-muted)]">
-    💐 Cada flor cuenta una historia. Nosotros te ayudamos a contar la tuya.
-  </p>
-</div>
+              <p className="text-center text-sm italic text-[var(--brand-muted)]">
+                💐 Cada flor cuenta una historia. Nosotros te ayudamos a contar la tuya.
+              </p>
+            </div>
 
           </div>
 
