@@ -13,7 +13,7 @@ export const ProductGrid = () => {
             Arreglos pensados para cada ocasión
           </h2>
         </div>
-        <div className="flex w-full max-w-sm items-center gap-2 rounded-full border border-[var(--brand-border)] bg-[var(--brand-card)] px-4 py-2 text-sm text-[var(--brand-muted)]">
+        <div className="flex w-full max-w-sm items-center gap-2 rounded-full border border-[var(--brand-border)] bg-white/70 px-4 py-2 text-sm text-[var(--brand-muted)] shadow-[var(--brand-shadow)] transition focus-within:border-[var(--brand-primary)] focus-within:ring-4 focus-within:ring-[var(--brand-ring)]">
           <span className="text-base">🔍</span>
           <input
             type="text"
