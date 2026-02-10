@@ -1,3 +1,5 @@
+import { WHATSAPP_NUMBER } from "@/app/(catalog)/_components/ProductCard";
+
 // lib/whatsapp.ts
 export function buildWhatsAppMessage(product: {
   name: string;
@@ -21,9 +23,8 @@ Estoy interesado/a en el siguiente arreglo:
 
 
 export function buildWhatsAppAdvisorLink() {
-  const number = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
 
-  if (!number) {
+  if (!WHATSAPP_NUMBER) {
     throw new Error("NEXT_PUBLIC_WHATSAPP_NUMBER is not defined");
   }
 
@@ -31,5 +32,5 @@ export function buildWhatsAppAdvisorLink() {
     "Hola 🌸 Quisiera asesoría para elegir el arreglo ideal para una ocasión especial."
   );
 
-  return `https://wa.me/${number}?text=${message}`;
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
 }

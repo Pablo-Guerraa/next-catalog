@@ -12,7 +12,7 @@ type ProductCardProps = {
     imageUrl: string;
   };
 };
-const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER!;
+export const WHATSAPP_NUMBER = 573017851953;
 
 export const ProductCard = ({ product }: ProductCardProps) => {
   const message = buildWhatsAppMessage(product);
