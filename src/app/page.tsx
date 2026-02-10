@@ -11,7 +11,7 @@ export default function Home() {
       <main>
         <Hero />
         <CategoryChips />
-        <ProductGrid />
+        <ProductGrid id="catalog-start" />
       </main>
       <SiteFooter />
     </div>
